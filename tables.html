@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables Website</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Pizza Ordering Form</h1>
+
+            <h3>Contact Information</h3>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="phone">Phone</label>
+            <input type="phone" name="phone" id="phone"
+            pattern="[0-9]{3}-[0-9]{3}=[0-9]{4}"
+            required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+
+
+            <h3>Select Pizza Size</h3>
+            <label >Pizza Size:</label>
+            <select name="pizzaSize" id="pizzaSize">
+                <option>--Select Size--</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>X Large</option>
+            </select>
+
+
+
+            <h3>Select Sauce</h3>
+            <input type="radio" name="sauce"><label>Marinara</label><br>
+            <input type="radio" name="sauce"><label>Ranch</label><br>
+            <input type="radio" name="sauce"><label>No Sauce</label><br>
+
+
+
+
+            <h3>Select Toppings</h3>
+            <input type="checkbox" name="topping"><label>Pepperoni</label>
+            <input type="checkbox" name="topping"><label>Sausage</label><br>
+            <input type="checkbox" name="topping"><label>Mushroom</label>
+            <input type="checkbox" name="topping"><label>Pineapple</label><br>
+            <input type="checkbox" name="topping"><label>Ham</label>
+            <input type="checkbox" name="topping"><label>Peppers</label><br>
+            <input type="checkbox" name="topping"><label>Onions</label>
+            <input type="checkbox" name="topping"><label>Spinach</label><br>
+
+
+
+            <h3>Additional Instructions</h3>
+            <textarea name="instructions">Add instructions</textarea><br>
+            <input type="submit" value="Submit!">
+        </div>
+    </body>
+</html>
