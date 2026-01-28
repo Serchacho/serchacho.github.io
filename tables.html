@@ -5,20 +5,21 @@
     </head>
 
     <body>
-        <form border: 1px solid black; padding: 10px;>
+        <form style="border: 1px solid black; padding: 10px; width:350px;">
             <h1>Pizza Ordering Form</h1>
 
             <h3>Contact Information</h3>
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" title="ex) John Doe" required>
             <br>
             <label for="phone">Phone</label>
             <input type="phone" name="phone" id="phone"
-            pattern="[0-9]{3}-[0-9]{3}=[0-9]{4}"
+            title="ex) 123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required>
             <br>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" title="ex) johndoe@gmail.com" required>
 
 
 
@@ -60,8 +61,8 @@
             <br>
             <br>
 
-
-            <table>
+            <p>List of my favorite games</p>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>Developer</th>
@@ -71,14 +72,27 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Facepunch Studios</td>
+                        <td rowspan="2">Facepunch Studios</td>
                         <td>Rust</td>
                         <td>2013</td>
                     </tr>
                     <tr>
-                        <td>Facepunch Studios</td>
+                        
                         <td>Garry's Mod</td>
                         <td>2006</td>
+                    </tr>
+                    <tr>
+                        <td>Re-Logic</td>
+                        <td>Terraria</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>Mojang</td>
+                        <td>Minecraft</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Count: 4</td>
                     </tr>
                 </tbody>
             </table>
