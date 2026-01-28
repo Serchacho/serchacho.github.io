@@ -8,12 +8,12 @@
         <form style="border: 1px solid black; padding: 10px; width:350px;">
             <h1>Pizza Ordering Form</h1>
 
-            <h3>Contact Information</h3>
+            <h2>Contact Information</h2>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" title="ex) John Doe" required>
             <br>
-            <label for="phone">Phone</label>
-            <input type="phone" name="phone" id="phone"
+            <label for="tel">Phone</label>
+            <input type="tel" name="tel" id="tel"
             title="ex) 123-456-7890"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required>
@@ -23,7 +23,7 @@
 
 
 
-            <h3>Select Pizza Size</h3>
+            <h2>Select Pizza Size</h2>
             <label >Pizza Size:</label>
             <select name="pizzaSize" id="pizzaSize">
                 <option>--Select Size--</option>
@@ -34,7 +34,7 @@
 
 
 
-            <h3>Select Sauce</h3>
+            <h2>Select Sauce</h2>
             <input type="radio" name="sauce"><label>Marinara</label><br>
             <input type="radio" name="sauce"><label>Ranch</label><br>
             <input type="radio" name="sauce"><label>No Sauce</label><br>
@@ -42,7 +42,7 @@
 
 
 
-            <h3>Select Toppings</h3>
+            <h2>Select Toppings</h2>
             <input type="checkbox" name="topping"><label>Pepperoni</label>
             <input type="checkbox" name="topping"><label>Sausage</label><br>
             <input type="checkbox" name="topping"><label>Mushroom</label>
@@ -54,7 +54,7 @@
 
 
 
-            <h3>Additional Instructions</h3>
+            <h2>Additional Instructions</h2>
             <textarea name="instructions">Add instructions</textarea><br>
             <input type="submit" value="Submit!">
 
