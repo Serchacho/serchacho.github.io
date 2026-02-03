@@ -1,0 +1,151 @@
+
+html, body {
+    height: 100%; /* Ensure html and body take full height */
+    margin: 0;
+    padding: 0;
+
+    background-color:#FEFAE0;
+    color:#FEFAE0;
+}
+
+
+/* LEFT-SIZE ARTICLE SELECTOR */
+#jumpMenu{
+    background-color:#FEFAE0;
+    color:#283618;
+    
+
+
+    position:fixed;
+    left:0px;
+    
+    width:20%;
+    height: 100vh;
+    border-right:solid 5px #BC6C25;
+    /* margin:0px 500px 0px 0px; */
+
+    flex-direction:column;
+}
+#jumpMenu a, #jumpMenu h2{
+    text-align:center;
+    padding-bottom:20px;
+}
+
+a{
+    color:#DDA15E;
+    font-weight:bold;
+    font-size:15px;
+    text-decoration:none;
+}
+
+
+
+
+/* HEADER */
+header{
+    position:fixed;
+    /* float:right; */
+    right:0px;
+    top: 0px;
+
+
+
+    width:80%;
+    /* border-left:solid 5px #BC6C25; */
+
+}
+header p{
+    
+    padding:20px 30% 20px 30%;
+    /* padding-left:30%;
+    padding-right:30%; */
+    margin: 0px;
+    
+    text-align:center;
+
+    background-color: #283618;
+    font-size: 20px;
+}
+
+header nav{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+
+    background-color:rgb(31, 123, 203);
+}
+button{
+    border:outset;
+    border-color: #BC6C25;
+    width:25%;
+    text-decoration:none;
+
+    background-color:#DDA15E;
+    
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+button:hover{
+    background-color:#BC6C25;
+}
+
+
+
+
+
+
+/* ARTICLES */
+h1{
+    padding:100px 0px 0px 21%;
+    margin:0px;
+}
+
+nav{
+    
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+
+#container{
+    float:right;
+    width:80%;
+
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+
+article{
+    width:300px;
+
+    padding:10px;
+    border: solid 5px #BC6C25;
+    margin:1%;
+
+    background-color:#606C38;
+}
+
+
+
+/* THANK YOU TEXT */
+#thanks{
+    position:fixed;
+    float:right;
+
+    text-align:center;
+
+    bottom:0px;
+    right:0px;
+
+    width:200px;
+
+    padding:20px;
+    margin:0px;
+
+    background-color:#BC6C25;
+
+}
