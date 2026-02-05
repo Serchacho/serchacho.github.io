@@ -10,25 +10,63 @@ html, body {
 
 
 /* LEFT-SIZE ARTICLE SELECTOR */
+#menuItems{
+    
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
 #jumpMenu{
     background-color:#FEFAE0;
     color:#283618;
     
-
-
     position:fixed;
     left:0px;
     
     width:20%;
-    height: 100vh;
-    border-right:solid 5px #BC6C25;
-    /* margin:0px 500px 0px 0px; */
+    height: 0px;
+    /* border-right:solid 5px #BC6C25; */
+
+    list-style-type: none;
 
     flex-direction:column;
+    /* justify-content: center;
+    align-items: center; */
+    overflow:hidden;
+    transition:height 0.5s;
+
 }
-#jumpMenu a, #jumpMenu h2{
+#recentArticles:hover + #jumpMenu{
+    height:50%;
+    transition:height 0.5s;
+}
+#jumpMenu:hover{
+    height:50%;
+}
+#jumpMenu a{
     text-align:center;
-    padding-bottom:20px;
+    /* padding:20px; */
+    
+
+    color:#DDA15E;
+    font-weight:bold;
+    font-size:15px;
+    
+}
+#jumpMenu li:hover{
+    background-color: #BC6C25;
+    
+}
+#jumpMenu li{
+    padding:10px 0px 10px 0px;
+    margin:0px;
+
+
+}
+
+nav ul, nav ul a{
+    padding:0px;
+    margin:0px;
 }
 
 a{
@@ -78,7 +116,7 @@ header nav{
 button{
     border:outset;
     border-color: #BC6C25;
-    width:25%;
+    width:20%;
     text-decoration:none;
 
     background-color:#DDA15E;
@@ -87,7 +125,7 @@ button{
     transition: background-color 0.3s ease, transform 0.2s ease;
 
 }
-button:hover{
+button:nth-child(1):hover{
     background-color:#BC6C25;
 }
 
@@ -100,13 +138,6 @@ button:hover{
 h1{
     padding:100px 0px 0px 21%;
     margin:0px;
-}
-
-nav{
-    
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
 }
 
 #container{
@@ -127,6 +158,25 @@ article{
     margin:1%;
 
     background-color:#606C38;
+    /* transform: scale(1.0);
+    transition: transform 2.0s ease; */
+}
+article p, article h2{
+
+    color:#aba897;
+    transition: color 2.0s ease;
+}
+article p::first-letter{
+    font-family: "Times New Roman", Times, serif;
+    font-size:3em;
+}
+article:hover{
+    transform: scale(1.05);
+    transition: transform 2.0s ease;
+}
+article:hover p, article:hover h2{
+    color: #FEFAE0;
+    transition: color 2.0s ease;
 }
 
 
