@@ -6,12 +6,20 @@ html, body {
 
     background-color:#FEFAE0;
     color:#FEFAE0;
+
+    font-size:16px;
 }
 
 
 /* LEFT-SIZE ARTICLE SELECTOR */
 #menuItems{
-    
+    position:fixed;
+    left:0px;
+    top:0px;
+
+    width:20%;
+    height:100vh;
+
     display:flex;
     flex-wrap:wrap;
     flex-direction:column;
@@ -20,10 +28,10 @@ html, body {
     background-color:#FEFAE0;
     color:#283618;
     
-    position:fixed;
+    /* position:relative; */
     left:0px;
     
-    width:20%;
+    width:100%;
     height: 0px;
     /* border-right:solid 5px #BC6C25; */
 
@@ -37,24 +45,28 @@ html, body {
 
 }
 #recentArticles:hover + #jumpMenu{
-    height:50%;
+    height:40%;
     transition:height 0.5s;
 }
 #jumpMenu:hover{
-    height:50%;
+    height:40%;
 }
 #jumpMenu a{
     text-align:center;
     /* padding:20px; */
     
 
-    color:#DDA15E;
+    color:#BC6C25;
     font-weight:bold;
     font-size:15px;
     
 }
+#jumpMenu li:hover a{
+    color:#FEFAE0;
+}
 #jumpMenu li:hover{
     background-color: #BC6C25;
+    /* color:#FEFAE0; */
     
 }
 #jumpMenu li{
@@ -82,15 +94,12 @@ a{
 /* HEADER */
 header{
     position:fixed;
-    /* float:right; */
     right:0px;
     top: 0px;
 
-
-
     width:80%;
-    /* border-left:solid 5px #BC6C25; */
-
+    height:90px;
+    z-index:1000; /* makes sure header is on top layer */
 }
 header p{
     
@@ -116,7 +125,7 @@ header nav{
 button{
     border:outset;
     border-color: #BC6C25;
-    width:20%;
+    width:100%;
     text-decoration:none;
 
     background-color:#DDA15E;
@@ -125,7 +134,7 @@ button{
     transition: background-color 0.3s ease, transform 0.2s ease;
 
 }
-button:nth-child(1):hover{
+button:hover{
     background-color:#BC6C25;
 }
 
@@ -158,18 +167,19 @@ article{
     margin:1%;
 
     background-color:#606C38;
-    /* transform: scale(1.0);
-    transition: transform 2.0s ease; */
+    transform: scale(1.0);
+    transition: transform 2.0s ease;
 }
 article p, article h2{
 
     color:#aba897;
-    transition: color 2.0s ease;
+    /* transition: color 2.0s ease; */
 }
-article p::first-letter{
+article p:first-of-type::first-letter{
     font-family: "Times New Roman", Times, serif;
-    font-size:3em;
+    font-size:36px;
 }
+
 article:hover{
     transform: scale(1.05);
     transition: transform 2.0s ease;
@@ -197,5 +207,5 @@ article:hover p, article:hover h2{
     margin:0px;
 
     background-color:#BC6C25;
-
+    color: FEFAE0;
 }
