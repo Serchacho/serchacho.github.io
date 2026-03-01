@@ -83,12 +83,12 @@ function addNewArticle(){
     const article = document.createElement("article");
     article.classList.add(type);
 
-    // create marker (colored label)
+    // create marker/colored label
     const marker = document.createElement("span");
     marker.classList.add("marker");
     marker.textContent = type.charAt(0).toUpperCase() + type.slice(1);
 
-    // create title
+    // title of article
     const h2 = document.createElement("h2");
     h2.textContent = title;
 
