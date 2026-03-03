@@ -14,18 +14,21 @@
                 <p>
                     Name or ID
                 </p> 
-                <input type="text">
-                <button onclick="search()" id="searchButton" type="button">Search</button>
+                <input type="text" id="pokemonName" placeholder="Enter pokemon name or ID">
+                <button onclick="searchPokemon()" id="searchButton" type="button">Search</button>
             </div>
+
+
 
             <div class="display">
-                <img src="no-image.jpg" alt="no image found">
+                <img src="no-image.jpg" alt="Pokemon sprite" id="pokemonSprite" style="display: none">
             </div>
 
-            <div class="">
+
+
+            <div class="attributes">
                 <audio controls>
                     <source src="" type="audio/mp3">
-
                 </audio>
 
 
@@ -62,9 +65,9 @@
                     </div>
                 </div>
 
-
-
             </div>
+
+
 
 
             <div >

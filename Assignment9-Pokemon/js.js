@@ -1,3 +1,20 @@
-function search(){
-    console.log("search function called")
+async function searchPokemon(){
+    console.log("searchPokemon function called")
+
+    try{
+        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();     // incase someone types in all uppercase
+
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+
+        if(!response.ok){
+            throw new Error("Could not fetch response!!!");
+        }
+
+        const data = await response.json();
+        console.log(data);
+    }
+    catch(error){
+        console.error(error);
+    }
+
 }

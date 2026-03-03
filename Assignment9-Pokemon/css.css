@@ -11,7 +11,7 @@ body{
     margin: 50px auto;
 
     background-color: white;
-
+    
 
 
     display:flex;
@@ -24,4 +24,8 @@ img{
     width: 80%;
     margin: 50px auto;
     display:block;
+}
+
+.dropdown-container{
+    
 }
