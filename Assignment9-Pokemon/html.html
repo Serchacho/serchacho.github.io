@@ -21,46 +21,43 @@
 
 
             <div class="display">
-                <img src="no-image.jpg" alt="Pokemon sprite" id="pokemonSprite" style="display: none">
+                <img src="no-image.jpg" alt="Pokemon sprite" id="pokemonSprite" >
+                
             </div>
 
 
 
             <div class="attributes">
                 <audio controls>
-                    <source src="" type="audio/mp3">
+                    <source src="" type="audio/mp3" id="pokemonAudio">
                 </audio>
-
+                <br>
 
                 <div class="dropdown-container">
                     <div class="dropdown-item">
                         <select name="moves" id="move1">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
+                            <option value="option1">No moves available</option>
                         </select>
                     </div>
                     
 
                     <div class="dropdown-item">
                         <select name="moves" id="move2">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
+                            <option value="option1">No moves available</option>
                         </select>
                     </div>
                     
 
                     <div class="dropdown-item">
                         <select name="moves" id="move3">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
+                            <option value="option1">No moves available</option>
                         </select>
                     </div>
                     
 
                     <div class="dropdown-item">
                         <select name="moves" id="move4">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
+                            <option value="option1">No moves available</option>
                         </select>
                     </div>
                 </div>
@@ -70,8 +67,13 @@
 
 
 
-            <div >
-
+            <div id="team-list">
+                <br><br><br>
+                <button onclick="addToTeam()" id="teamButton" type="button">Add to team</button>
+            
+                <div id="team">
+                    
+                </div>
             </div>
 
         </div>
